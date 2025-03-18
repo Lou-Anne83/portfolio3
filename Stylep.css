@@ -329,91 +329,46 @@ a {
     border-radius: 10px;
 }
 
-/*RESPONSIVE*/
+/*Site web*/
 
-@media screen and (max-width: 768px) {
-    body {
-        padding: 10px;
-        font-size: 14px;
-    }
-
-    h1 {
-        font-size: 2.5rem;
-    }
-
-    .container {
-        padding: 20px;
-        margin: 0;
-    }
-
-    .navigation {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .video-container {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .ads-grid {
-        flex-direction: column;  /* Organise les images en colonne pour les petits écrans */
-        align-items: center; /* Centre les images */
-    }
-
-    .ads-grid img {
-        width: 90%; /* Ajuste encore la largeur pour s'adapter mieux à l'écran */
-        max-width: none; /* Retirer la limite de largeur pour maximiser l'espace */
-    }
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f3e8;
+    font-family: Arial, sans-serif;
+    text-align: center;
 }
 
-    .image-gallery {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .skills-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .skill {
-        font-size: 16px;
-        padding: 15px;
-    }
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
-/* For screens smaller than 480px (Mobile Phones) */
-@media screen and (max-width: 480px) {
-    h1 {
-        font-size: 2rem;
-    }
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
 
-    .subtitle {
-        font-size: 16px;
-    }
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
 
-    .download-icon {
-        font-size: 40px;
-    }
+p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    max-width: 600px;
+}
 
-    .navigation a {
-        font-size: 16px;
-    }
-
-    .skills-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .image-gallery {
-        grid-template-columns: 1fr;
-    }
-
-    .video-container {
-        gap: 10px;
-    }
-
-    .video iframe {
-        width: 100%;
-        height: 200px;
-    }
+.arrow {
+    width: 50px;
+    height: 50px;
 }
